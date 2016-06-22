@@ -8,9 +8,7 @@ angular.module('app.routes', ['ionicUIRouter'])
   // Each state's controller can be found in controllers.js
   $stateProvider
     
-  
-
-      .state('tabsController.jelajah', {
+.state('tabsController.jelajah', {
     url: '/page2',
     views: {
       'tab1': {
@@ -158,6 +156,20 @@ angular.module('app.routes', ['ionicUIRouter'])
       'tab3': {
         templateUrl: 'templates/invoice.html',
         controller: 'invoiceCtrl'
+      }
+    }
+  })
+
+  .state('tabsController.peta', {
+    url: '/peta',
+    views: {
+      'tab1': {
+        templateUrl: 'templates/peta.html',
+        controller: 'petaCtrl'
+      },
+      'tab3': {
+        templateUrl: 'templates/peta.html',
+        controller: 'petaCtrl'
       }
     }
   })
